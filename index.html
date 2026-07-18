@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahli Kunci Profesional - 24 Jam</title>
+    <meta name="description" content="Jasa ahli kunci terpercaya untuk rumah, mobil, motor, brangkas, dan lemari. Layanan cepat 24 jam.">
+    
+    <!-- Open Graph (SEO Tambahan) -->
+    <meta property="og:title" content="Ahli Kunci Profesional - 24 Jam">
+    <meta property="og:description" content="Jasa ahli kunci terpercaya. Cepat, aman, terjamin.">
+    <meta property="og:type" content="website">
+    
+    <!-- Structured Data untuk Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "AhliKunciPro",
+        "description": "Jasa ahli kunci profesional 24 jam",
+        "telephone": "+6289518216394",
+        "url": "https://ahlikuncipro.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Lebak Bulus raya No.2 Jakarta Selatan",
+            "addressLocality": "Jakarta",
+            "addressCountry": "ID"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        }
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #f59e0b;
+            --accent-hover: #d97706;
+            --text-dark: #1e293b;
+            --text-light: #f8fafc;
+            --bg-light: #f1f5f9;
+            --white: #ffffff;
+            --whatsapp-color: #25D366;
+            --phone-color: #2563eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            overflow-x: hidden;
+            padding-bottom: 80px;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        /* --- HEADER --- */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent-color);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--white);
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+
+        /* --- HERO --- */
+        .hero {
+            background: 
+                linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.75) 100%),
+                url('https://picsum.photos/seed/locksmith-hero/1920/1080.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Dekoratif background pattern */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11, 0.15);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-badge .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease-out 0.3s both;
+        }
+
+        .hero-content h1 span { color: var(--accent-color); }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #cbd5e1;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.5s both;
+        }
+
+        .btn-cta {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-cta:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 2px solid rgba(255,255,255,0.3);
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--white);
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-3px);
+        }
+
+        /* --- SECTIONS --- */
+        .section {
+            padding: 5rem 5%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header .divider {
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 0.8rem auto 0;
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            margin-top: 12px;
+            color: #64748b;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- ABOUT --- */
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .about-text { flex: 1; min-width: 300px; }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .about-text p { color: #475569; margin-bottom: 0.5rem; }
+
+        .about-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .stat-item { text-align: center; }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .about-image { flex: 1; min-width: 300px; }
+
+        .about-image img {
+            border-radius: 12px;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* --- SERVICES --- */
+        .services { background-color: var(--white); }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--bg-light);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid #e2e8f0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: var(--accent-color);
+        }
+
+        .card-img-wrapper {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            background: #e2e8f0;
+        }
+
+        .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .service-card:hover .card-img-wrapper img {
+            transform: scale(1.08);
+        }
+
+        .card-content {
+            padding: 24px;
+            text-align: center;
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(245, 158, 11, 0.1);
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .card-content h3 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        /* --- FEATURES --- */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .feature-item {
+            padding: 35px 25px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .feature-item:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        .feature-item i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        /* --- TESTIMONIAL (Tambahan) --- */
+        .testimonials {
+            background: var(--white);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '\201C';
+            font-size: 4rem;
+            color: var(--accent-color);
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #475569;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #cbd5e1;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 0.95rem;
+        }
+
+        .testimonial-role {
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        .stars {
+            color: var(--accent-color);
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+        }
+
+        /* --- CTA BANNER --- */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e3a5f 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 20px;
+            border-radius: 16px;
+            margin: 0 5%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .cta-banner h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-banner p {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: var(--primary-color);
+            color: #cbd5e1;
+            padding: 3rem 5% 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--accent-color);
+        }
+
+        .footer-col ul li { margin-bottom: 10px; }
+
+        .footer-col ul li a {
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+            transform: translateX(4px);
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .contact-info li i {
+            color: var(--accent-color);
+            margin-top: 4px;
+            min-width: 16px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        /* --- SCROLL TO TOP --- */
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 45px;
+            height: 45px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* --- FLOATING BUTTONS --- */
+        .floating-container {
+            position: fixed;
+            z-index: 9999;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            gap: 12px;
+        }
+
+        .float-wa {
+            background-color: var(--whatsapp-color);
+            color: white;
+            width: auto;
+            min-width: 180px;
+            padding: 14px 24px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+            animation: pulse-wa 2s infinite;
+            font-weight: 700;
+            font-size: 0.95rem;
+            position: relative;
+        }
+
+        .float-wa:hover {
+            transform: translateY(-5px);
+            background-color: #1ebc57;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+            animation: none;
+        }
+
+        .float-wa i { font-size: 1.4rem; }
+
+        .float-wa::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 14px;
+            height: 14px;
+            background-color: #ff3b30;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+
+        .float-phone {
+            background-color: var(--white);
+            color: var(--phone-color);
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: var(--transition);
+            border: 2px solid var(--phone-color);
+            margin-right: 8px;
+        }
+
+        .float-phone:hover {
+            transform: rotate(15deg) scale(1.1);
+            background-color: var(--phone-color);
+            color: white;
+        }
+
+        @keyframes pulse-wa {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* --- TOAST NOTIFICATION --- */
+        .toast {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            z-index: 10000;
+            transform: translateX(120%);
+            transition: transform 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .toast.show { transform: translateX(0); }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary-color);
+                padding: 20px;
+                text-align: center;
+                gap: 15px;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+                border-top: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .nav-links.open { display: flex; }
+
+            .menu-toggle { display: block; }
+
+            /* Hamburger ke X */
+            .menu-toggle.active .fa-bars { display: none; }
+            .menu-toggle.active .fa-xmark { display: inline; }
+            .menu-toggle .fa-xmark { display: none; }
+
+            .about-container { padding: 25px; }
+            .about-stats { gap: 20px; }
+            .stat-number { font-size: 1.4rem; }
+
+            .cta-banner { margin: 0 3%; padding: 3rem 15px; }
+            .cta-banner h2 { font-size: 1.5rem; }
+
+            .floating-container {
+                bottom: 15px;
+                right: 15px;
+            }
+
+            .float-wa {
+                padding: 12px 20px;
+                min-width: 160px;
+                font-size: 0.9rem;
+            }
+
+            .scroll-top {
+                left: 15px;
+                bottom: 15px;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero { min-height: 75vh; }
+            .about-stats { flex-wrap: wrap; }
+            .stat-item { flex: 1; min-width: 80px; }
+            .section { padding: 3rem 4%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-key"></i> AhliKunciPro
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#services">Layanan</a>
+            <a href="#testimonials">Testimoni</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Tersedia 24 Jam — Siap Datang ke Lokasi
+            </div>
+            <h1>Solusi Terpercaya untuk<br><span>Masalah Kunci Anda </span><br><span>Jakarta Selatan Dan Sekitarnya</span></h1>
+            <p>Jasa ahli kunci profesional 24 jam. Melayani kunci rumah, mobil, motor, brangkas, dan lainnya. Cepat, Aman, dan Terjamin.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/6289518216394?text=Halo,%20saya%20butuh%20bantuan%20ahli%20kunci." target="_blank" class="btn-cta">
+                    <i class="fa-brands fa-whatsapp"></i> Hubungi via WhatsApp
+                </a>
+                <a href="tel:+6289518216394" class="btn-secondary">
+                    <i class="fa-solid fa-phone"></i> Telepon Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2>Tentang Kami</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Ahli Kunci Berpengalaman & Profesional</h3>
+                <p>Kami adalah tim teknisi ahli kunci yang telah berpengalaman bertahun-tahun menangani berbagai jenis masalah kunci. Kami memahami betapa frustrasinya saat Anda terkunci di luar rumah atau kunci mobil macet.</p>
+                <br>
+                <p>Oleh karena itu, kami siap memberikan solusi cepat dengan peralatan modern. Prioritas kami adalah keamanan, kecepatan, dan kepuasan pelanggan. Kami menjamin kerusakan minim saat proses pembukaan kunci.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Tahun Pengalaman</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Pelanggan Puas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30mnt</div>
+                        <div class="stat-label">Estimasi Tiba</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/about-img.jpg" alt="Teknisi ahli kunci sedang bekerja dengan peralatan modern">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services">
+        <div class="section-header">
+            <h2>Layanan Kami</h2>
+            <div class="divider"></div>
+            <p>Kami menyediakan solusi lengkap untuk berbagai kebutuhan kunci Anda.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-img-wrapper">
+                    <img src="images/kunci-pintu.jpg" alt="Ahli kunci pintu rumah" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fa-solid fa-house-lock"></i></div>
+                    <h3>Ahli Kunci Pintu Rumah</h3>
+                    <p>Perbaikan kunci macet, duplikat kunci, atau ganti silinder pintu rumah agar lebih aman.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-img-wrapper">
+                    <img src="images/kunci-gembok.jpg" alt="Ahli kunci gembok" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
+                    <h3>Ahli Kunci Gembok</h3>
+                    <p>Buka gembok terkunci tanpa merusak, duplikat kunci gembok berbagai merek.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-img-wrapper">
+                    <img src="images/kunci-motor.jpg" alt="Ahli kunci motor" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                    <h3>Ahli Kunci Motor</h3>
+                    <p>Buat kunci hilang, kunci kontak macet, dan program kunci motor modern (keyless).</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-img-wrapper">
+                    <img src="images/kunci-mobil.jpg" alt="Ahli kunci mobil" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fa-solid fa-car"></i></div>
+                    <h3>Ahli Kunci Mobil</h3>
+                    <p>Spesialis kunci mobil panggilan. Duplikat remote, buka pintu mobil terkunci, dan immobilizer.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-img-wrapper">
+                    <img src="images/kunci-brangkas.jpg" alt="Ahli kunci brangkas" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fa-solid fa-vault"></i></div>
+                    <h3>Ahli Kunci Brangkas</h3>
+                    <p>Jasa buka brangkas lupa kode, kombinasi rusak, atau kunci hilang. Teknik aman tanpa bor.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-img-wrapper">
+                    <img src="images/kunci-lemari.jpg" alt="Ahli kunci lemari" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fa-solid fa-dungeon"></i></div>
+                    <h3>Ahli Kunci Lemari</h3>
+                    <p>Perbaikan kunci lemari besi, kunci lemari kayu, dan penggantian anak kunci lemari.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-img-wrapper">
+                    <img src="images/kunci-kabinet.jpg" alt="Ahli kunci file kabinet" loading="lazy">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fa-solid fa-folder-closed"></i></div>
+                    <h3>Ahli Kunci File Kabinet</h3>
+                    <p>Solusi untuk kunci file kabinet kantor yang hilang atau macet, menjaga dokumen tetap aman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Mengapa Memilih Kami?</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Layanan 24 Jam</h3>
+                <p>Siap membantu kapan saja Anda mengalami darurat kunci, siang maupun malam.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>Teknisi Terverifikasi</h3>
+                <p>Tim kami berpengalaman, bersertifikat, dan dapat dipercaya sepenuhnya.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-wallet"></i>
+                <h3>Harga Transparan</h3>
+                <p>Harga kompetitif dan disepakati di awal tanpa biaya tersembunyi.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Respon Cepat</h3>
+                <p>Kami datang ke lokasi Anda dengan estimasi waktu kurang dari 30 menit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Tambahan Baru) -->
+    <section id="testimonials" class="section testimonials">
+        <div class="section-header">
+            <h2>Apa Kata Pelanggan Kami</h2>
+            <div class="divider"></div>
+            <p>Kepercayaan pelanggan adalah bukti nyata kualitas layanan kami.</p>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">Kunci rumah saya macet jam 11 malam. Dalam 25 menit teknisi sudah datang dan berhasil membuka tanpa merusak pintu. Sangat profesional!</p>
+                <div class="testimonial-author">
+                    <img src="https://picsum.photos/seed/person1/80/80.jpg" alt="Budi Santoso" class="testimonial-avatar" loading="lazy">
+                    <div>
+                        <div class="testimonial-name">Budi Santoso</div>
+                        <div class="testimonial-role">Pemilik Rumah — Jakarta Selatan</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">Kunci mobil Honda Jazz saya hilang. Teknisinya bisa buat duplikat remote keyless langsung di tempat. Harganya juga wajar, tidak neko-neko.</p>
+                <div class="testimonial-author">
+                    <img src="https://picsum.photos/seed/person2/80/80.jpg" alt="Sari Dewi" class="testimonial-avatar" loading="lazy">
+                    <div>
+                        <div class="testimonial-name">Sari Dewi</div>
+                        <div class="testimonial-role">Karyawan Swasta — Jskarta Selatan</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p class="testimonial-text">Brangkas kantor lupa kode kombinasi. Awalnya takut brangkas rusak, tapi teknisinya sangat hati-hati. Berhasil dibuka dengan aman. Recommended!</p>
+                <div class="testimonial-author">
+                    <img src="https://picsum.photos/seed/person3/80/80.jpg" alt="Ahmad Rizky" class="testimonial-avatar" loading="lazy">
+                    <div>
+                        <div class="testimonial-name">Ahmad Rizky</div>
+                        <div class="testimonial-role">Pemilik Usaha — Depok</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section id="contact" style="padding: 0 0 2rem;">
+        <div class="cta-banner">
+            <h2>Kunci Anda Bermasalah? Jangan Panik!</h2>
+            <p style="margin-bottom: 2rem; font-size: 1.1rem; color: #cbd5e1;">Hubungi kami sekarang untuk penanganan cepat, aman, dan profesional.</p>
+            <a href="https://wa.me/6289518216394?text=Halo,%20saya%20butuh%20bantuan%20ahli%20kunci." target="_blank" class="btn-cta" style="background: var(--accent-color); color: var(--primary-color);">
+                <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>AhliKunciPro</h4>
+                <p style="font-size: 0.9rem; line-height: 1.8;">Mitra terpercaya untuk solusi keamanan dan kunci Anda. Melayani panggilan ke rumah, kantor, dan lokasi darurat di seluruh Jakarta dan sekitarnya.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Kunci Mobil</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Kunci Motor</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Kunci Brangkas</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Kunci Pintu Rumah</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" style="font-size:0.7rem;"></i> Kunci Gembok</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak Kami</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> <span>Jl. Lebak Bulus Raya No.2, Jakarta Selatan</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <span>+62 895-1821-6394</span></li>
+                    <li><i class="fa-brands fa-whatsapp"></i> <span>+62 895-1821-6394</span></li>
+                    <li><i class="fa-solid fa-envelope"></i> <span>info@ahlikuncipro.com</span></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Jam Operasional</h4>
+                <ul>
+                    <li style="display:flex;justify-content:space-between;">
+                        <span>Senin - Jumat</span>
+                        <span style="color:var(--accent-color);font-weight:600;">24 Jam</span>
+                    </li>
+                    <li style="display:flex;justify-content:space-between;">
+                        <span>Sabtu</span>
+                        <span style="color:var(--accent-color);font-weight:600;">24 Jam</span>
+                    </li>
+                    <li style="display:flex;justify-content:space-between;">
+                        <span>Minggu & Hari Libur</span>
+                        <span style="color:var(--accent-color);font-weight:600;">24 Jam</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> AhliKunciPro. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Kembali ke atas">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check" style="color: var(--accent-color); font-size: 1.2rem;"></i>
+        <span id="toastMessage">Pesan berhasil dikirim!</span>
+    </div>
+
+    <!-- Floating Buttons -->
+    <div class="floating-container">
+        <a href="tel:+6289518216394" class="float-phone" aria-label="Hubungi via Telepon">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://wa.me/6289518216394?text=Halo,%20saya%20butuh%20bantuan%20ahli%20kunci." target="_blank" class="float-wa" aria-label="Chat WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Chat WhatsApp</span>
+        </a>
+    </div>
+
+    <script>
+        // --- KONFIGURASI ---
+        // Ganti nomor ini dengan nomor bisnis Anda yang benar
+        const PHONE_NUMBER = '6289518216394';
+
+        // --- TAHUN OTOMATIS ---
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // --- MOBILE MENU ---
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const navItems = navLinks.querySelectorAll('a');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+
+        // Tutup menu saat klik link navigasi
+        navItems.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+
+        // --- ACTIVE NAV ON SCROLL ---
+        const sections = document.querySelectorAll('section[id]');
+
+        function updateActiveNav() {
+            const scrollY = window.scrollY + 120;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                const navLink = navLinks.querySelector(`a[href="#${sectionId}"]`);
+
+                if (navLink) {
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        navLinks.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+                        navLink.classList.add('active');
+                    }
+                }
+            });
+        }
+
+        // --- SCROLL TO TOP ---
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        function toggleScrollTop() {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        }
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // --- GABUNGKAN SCROLL EVENTS ---
+        window.addEventListener('scroll', () => {
+            updateActiveNav();
+            toggleScrollTop();
+        });
+
+        // Trigger saat pertama kali load
+        updateActiveNav();
+
+        // --- TOAST FUNCTION ---
+        function showToast(message, duration = 3000) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+
+        // --- ANIMASI SCROLL REVEAL (Intersection Observer) ---
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Terapkan ke semua card dan feature item
+        document.querySelectorAll('.service-card, .feature-item, .testimonial-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Tampilkan toast sambutan setelah 2 detik (opsional, bisa dihapus)
+        setTimeout(() => {
+            showToast('Butuh bantuan kunci? Klik tombol WhatsApp di bawah! 👇', 4000);
+        }, 2000);
+    </script>
+</body>
+</html>
